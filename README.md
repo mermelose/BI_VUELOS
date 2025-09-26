@@ -224,3 +224,4 @@ Estos KPIs se calcularán sobre tablas de hechos (vuelos) con dimensiones confor
 - **Tableau**. (s.f.). ¿Qué es Business Intelligence? *Tableau Software*. Recuperado de [https://www.tableau.com/es-mx/learn/articles/business-intelligence](https://www.tableau.com/es-mx/learn/articles/business-intelligence)
 - **Turban, E.**, **Sharda, R.**, **Delen, D.**, & **King, D.** (2011). *Business Intelligence: A Managerial Approach* (2nd ed.). Pearson.
 - **Quoc Duy V.**, **Jaya T.**, **Shinyoung C.**, **Pradipta D.**, **Bong J.**, & **Lee S.** (2017). *Next generation business intelligence and analytics: A survey*. arXiv. Recuperado de [https://arxiv.org/abs/1704.0340](https://arxiv.org/abs/1704.0340)
+- **DATASET** https://www.kaggle.com/datasets/robikscube/flight-delay-dataset-20182022
