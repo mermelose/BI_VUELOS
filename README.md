@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Este proyecto tiene como objetivo analizar datos históricos de vuelos para identificar patrones de retrasos, cancelaciones y desvíos. Con una base de datos sólida, se busca proporcionar insights que respalden decisiones estratégicas y operativas orientadas a optimizar la programación de vuelos, la asignación de aeronaves y la comunicación con los pasajeros. Asimismo, el modelo de datos facilita la toma de decisiones tanto para aerolíneas (reducción de costos y mejora del servicio) como para autoridades d...
+Este proyecto tiene como objetivo analizar datos históricos de vuelos para identificar patrones de retrasos, cancelaciones y desvíos. Con una base de datos sólida, se busca proporcionar insights que respalden decisiones estratégicas y operativas orientadas a optimizar la programación de vuelos, la asignación de aeronaves y la comunicación con los pasajeros. Asimismo, el modelo de datos facilita la toma de decisiones tanto para aerolíneas (reducción de costos y mejora del servicio) como para autoridades de aviación civil (gestión del tráfico aéreo y mejora de la seguridad operativa).
 
 ## Marco Teórico
 
