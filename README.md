@@ -6,15 +6,15 @@ Este proyecto tiene como objetivo analizar datos históricos de vuelos para iden
 
 ## Marco Teórico
 
-La Inteligencia de Negocios (Business Intelligence, BI) es un enfoque que integra metodologías, procesos y herramientas tecnológicas para transformar datos en información útil para la toma de decisiones organizacionales. Según Turban et al. (2011), la BI se define como “una arquitectura que combina almacenes de datos, herramientas analíticas y sistemas de presentación para ofrecer acceso a la información empresarial crítica”. Esta visión coincide con lo expuesto por Páez Bravo et al. (2019), quienes dest...
+La Inteligencia de Negocios (Business Intelligence, BI) es un enfoque que integra metodologías, procesos y herramientas tecnológicas para transformar datos en información útil para la toma de decisiones organizacionales. Según Turban et al. (2011), BI se define como “una arquitectura que combina almacenes de datos, herramientas analíticas y sistemas de presentación para ofrecer acceso a la información empresarial crítica”.  Esta visión coincide con lo expuesto por Páez Bravo et al. (2019), quienes destacan que BI no solo se centra en el almacenamiento de datos, sino en el descubrimiento de patrones relevantes para el negocio.
 
-De acuerdo con IBM, la BI “ingiere datos del negocio y los presenta en vistas fáciles de usar, como informes, paneles, tablas y gráficos”, facilitando así la generación de decisiones más informadas (IBM, s.f.). Por su parte, Tableau la concibe como un enfoque integral que “combina análisis de negocios, minería de datos, visualización, infraestructura de datos y mejores prácticas” con el fin de transformar tanto datos históricos como actuales en ventajas competitivas (Tableau, s.f.).
+De acuerdo con IBM, el BI “ingiere datos del negocio y los presenta en vistas fáciles de usar, como informes, paneles, tablas y gráficos”, facilitando así la generación de decisiones más informadas (IBM, s.f.). Por su parte, Tableau la concibe como un enfoque integral que “combina análisis de negocios, minería de datos, visualización, infraestructura de datos y mejores prácticas” con el fin de transformar tanto datos históricos como actuales en ventajas competitivas (Tableau, s.f.).
 
 ### Evolución hacia Business Intelligence & Analytics (BI&A)
 
 En investigaciones recientes, el concepto de BI se ha ampliado hacia Business Intelligence and Analytics (BI&A). Este enfoque integra técnicas de análisis predictivo, aprendizaje automático y procesamiento de grandes volúmenes de datos (big data), lo que permite generar no solo insights retrospectivos, sino también prescriptivos y prospectivos (Duy et al., 2017).
 
-De esta forma, la BI deja de ser una herramienta limitada a reportes estáticos para convertirse en una plataforma dinámica y adaptativa, capaz de responder a nuevas preguntas de negocio conforme surgen. Esto se complementa con funcionalidades de análisis visual, esquemas de autoexploración de datos (self-service BI) y arquitecturas escalables que permiten mayor autonomía y flexibilidad.
+De esta forma, el BI deja de ser una herramienta limitada a reportes estáticos para convertirse en una plataforma dinámica y adaptativa, capaz de responder a nuevas preguntas de negocio conforme surgen. Esto se complementa con funcionalidades de análisis visual, esquemas de autoexploración de datos (self-service BI) y arquitecturas escalables que permiten mayor autonomía y flexibilidad.
 
 ### Componentes y Arquitectura de un Sistema BI
 
@@ -29,7 +29,7 @@ Un sistema de BI se compone típicamente de los siguientes elementos interrelaci
 
 ### Modelado Dimensional
 
-El Kimball Group propone un proceso de diseño dimensional en cuatro etapas: (1) identificación del proceso de negocio, (2) definición del grano, (3) identificación de dimensiones y hechos, y (4) definición de jerarquías y agregaciones (Kimball Group, s.f.).
+Kimball Group propone un proceso de diseño dimensional en cuatro etapas: (1) identificación del proceso de negocio, (2) definición del grano, (3) identificación de dimensiones y hechos, y (4) definición de jerarquías y agregaciones (Kimball Group, s.f.).
 
 En este contexto, una tabla de hechos (fact table) contiene las medidas cuantitativas del negocio (por ejemplo, los minutos de retraso en vuelos), vinculadas a dimensiones mediante claves foráneas. Estas medidas deben ser numéricas para permitir su correcta agregación (IBM, s.f.).
 
@@ -57,7 +57,7 @@ El problema que se busca resolver puede resumirse en los siguientes puntos:
 
 ### Objetivo del Proyecto
 
-Construir un datamart temático que habilite consultas rápidas, agregaciones multidimensionales y la generación de KPIs relevantes para la gestión operacional.
+Construir un datamart que habilite consultas rápidas, agregaciones multidimensionales y la generación de KPIs relevantes para la gestión operacional.
 
 ### Preguntas de Negocio y Decisiones Esperadas
 
