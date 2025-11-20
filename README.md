@@ -87,7 +87,7 @@ Estos KPIs se calcularán sobre tablas de hechos (vuelos) con dimensiones confor
   
 ### MODELAMIENTO DE DATA DIMENSIONAL
 
-![Texto alternativo](diseno.png)
+![Texto alternativo](image_datamart.png)
 
 
 ### Diccionario de Datos
