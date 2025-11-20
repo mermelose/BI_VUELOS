@@ -50,10 +50,9 @@ Las empresas aéreas enfrentan dificultad de identificar con claridad la proporc
 El problema que se busca resolver puede resumirse en los siguientes puntos:
 
 - Volumen y dispersión de datos: información operativa en grandes volúmenes y múltiples archivos/fuentes dificulta su explotación.
-- Baja eficiencia para responder consultas de negocio: preguntas como “¿qué aerolíneas tuvieron mayor tasa de desvíos en rutas cortas en los últimos 6 meses?” demandan procesamiento intensivo y no cuentan con estructuras analíticas optimizadas.
+- Baja eficiencia para responder consultas de negocio: preguntas como “¿qué aerolíneas tuvieron mayor tasa de desvíos en rutas en los últimos 6 meses?” demandan procesamiento intensivo y no cuentan con estructuras analíticas optimizadas.
 - Limitaciones de reporting tradicional: herramientas como Excel no escalan y dificultan el cruce eficiente de múltiples dimensiones (tiempo, aeropuerto, aerolínea, estado del vuelo, distancia).
-- Necesidad de descubrir patrones no evidentes: se requieren modelos y estructuras que permitan detectar patrones de demora/cancelación y sus determinantes.
-- Decisiones operativas dependientes de evidencia: programación de vuelos, asignación de aeronaves y buffers de tiempo necesitan insights históricos confiables y consistentes.
+- Decisiones operativas dependientes de evidencia: programación de vuelos y asignación de aeronaves necesitan insights históricos confiables y consistentes.
 
 ### Objetivo del Proyecto
 
@@ -61,32 +60,31 @@ Construir un datamart que habilite consultas rápidas, agregaciones multidimensi
 
 ### Preguntas de Negocio y Decisiones Esperadas
 
-- ¿Qué aerolíneas exhiben mejor puntualidad por tramo de distancia (corto, medio, largo radio)?
-- ¿Qué aeropuertos acumulan más minutos de demora, y en qué franjas horarias?
+- ¿Qué aerolíneas exhiben mejor puntualidad?
+- ¿Qué aeropuertos acumulan más minutos de demora?
 - ¿Cuál es la tasa de cancelación promedio por aerolínea, mes y aeropuerto?
 
 ### Decisiones Operativas que Habilita:
 
 - Ajustar la programación en rutas frecuentemente problemáticas.
-- Incrementar buffers de giro en aeropuertos congestionados o en horarios críticos.
+- Incrementar buffers de giro en aeropuertos congestionados o en horarios críticos, es decir, aumentar el espacio de tiempo o físico entre procesos aeroportuarios para evitar la congestión en horas punta.
 - Optimizar la asignación de flota para minimizar impactos ante picos de demanda o restricciones operativas.
-- Focalizar iniciativas (mejora de procesos, coordinación con handling/ATC) en aerolíneas, rutas o hubs con peor desempeño.
+- Focalizar iniciativas (mejora de procesos) en aerolíneas o rutas con peor desempeño.
 
-### KPIs Propuestos para el Datamart
+### KPIs propuestos para el Datamart
 
 - OTP (On-Time Performance): % de vuelos con salida/llegada dentro del umbral (p. ej., menos a 15 min).
 - Tasa de cancelación: cancelaciones / vuelos programados.
 - Demora por dimensión: por aeropuerto, aerolínea, ruta, franja horaria, día/mes/temporada.
 - Vuelos afectados: proporción de vuelos con cualquier evento disruptivo (retraso>15, cancelación o desvío).
-- 
+  
 Estos KPIs se calcularán sobre tablas de hechos (vuelos) con dimensiones conformadas (fecha, aerolínea, tiempo) para permitir cortes consistentes y comparables.
 
 ### Resultados esperados
 - Datamart consolidado y documentado, con esquema estrella y diccionario de datos.
-- Dashboards para monitoreo operativo (tendencias, comparativos por aeropuerto/aerolínea/horario).
-- Catálogo de consultas de negocio parametrizables (por ejemplo: “últimos 6 meses”, “rutas cortas”, “horas pico”).
-- Recomendaciones de mejora operativa basadas en evidencia (programación, buffers).
-
+- Dashboards para monitoreo operativo (tendencias, comparativos por aeropuerto/aerolínea/tiempo).
+- Recomendaciones de mejora operativa basadas en evidencia.
+  
 ### MODELAMIENTO DE DATA DIMENSIONAL
 
 ![Texto alternativo](diseno.png)
