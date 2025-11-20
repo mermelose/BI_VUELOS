@@ -87,7 +87,7 @@ Estos KPIs se calcularán sobre tablas de hechos (vuelos) con dimensiones confor
   
 ### MODELAMIENTO DE DATA DIMENSIONAL
 
-![Texto alternativo](https://github.com/mermelose/BI_VUELOS/blob/main/diseno.png)
+![Texto alternativo](diseno.png)
 
 
 ### Diccionario de Datos
