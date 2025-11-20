@@ -76,7 +76,7 @@ Construir un datamart que habilite consultas rápidas, agregaciones multidimensi
 - OTP (On-Time Performance): % de vuelos con salida/llegada dentro del umbral (p. ej., menos a 15 min).
 - Tasa de cancelación: cancelaciones / vuelos programados.
 - Demora por dimensión: por aeropuerto, aerolínea, ruta, franja horaria, día/mes/temporada.
-- Vuelos afectados: proporción de vuelos con cualquier evento disruptivo (retraso>15, cancelación o desvío).
+- Vuelos afectados: proporción de vuelos con cualquier evento disruptivo (retraso>15 min, cancelación o desvío).
   
 Estos KPIs se calcularán sobre tablas de hechos (vuelos) con dimensiones conformadas (fecha, aerolínea, tiempo) para permitir cortes consistentes y comparables.
 
