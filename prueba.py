@@ -14,6 +14,6 @@ conn = pyodbc.connect(
 
 st.title("Dashboard con SQL Server conectado por Cloudflare Tunnel")
 
-df = pd.read_sql("SELECT TOP 100 * FROM TU_TABLA", conn)
+df = pd.read_sql("SELECT TOP 100 * fact_vuelos", conn)
 
 st.dataframe(df)
